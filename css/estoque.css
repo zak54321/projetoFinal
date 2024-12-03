@@ -1,0 +1,307 @@
+
+body {
+    background: url(https://static.vecteezy.com/ti/vetor-gratis/p1/6891093-abstrato-gradiente-fundo-vermelho-escuro-adequado-para-apresentacao-de-fundo-website-card-promotion-and-social-media-concept-vetor.jpg);
+    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+     animation: fadeIn 1s ease-out;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+h1 {
+    text-align: center;
+    color: #fcfafa;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+
+.menu {
+    background-color: #e80e0e;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    animation: slideUp 1s ease-out;
+}
+
+h2 {
+    color: #fff;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+
+#produtosLista {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    animation: slideUp 1s ease-out;
+}
+
+
+.produto-item {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.produto-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.produto-item strong {
+    color: #fff;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+
+.produto-item:nth-child(odd) {
+    background-color: #e00909;
+}
+
+.produto-item:nth-child(even) {
+    background-color: #c50a0a;
+}
+
+
+
+
+.remover-btn {
+    background-color: #020000; 
+    color: rgb(252, 249, 249);              
+    border: none;
+    padding: 2PX;
+    border-radius: 5px;        
+    padding: 8px 16px;
+    cursor: pointer;          
+    font-size: 14px;           
+    transition: background-color 0.3s ease; 
+}
+
+
+.alterar-btn {
+    background-color: #020000; 
+    color: rgb(252, 249, 249);              
+    border: none;
+    padding: 2PX;
+    border-radius: 5px;        
+    padding: 8px 16px;
+    cursor: pointer;          
+    font-size: 14px;           
+    transition: background-color 0.3s ease; 
+}
+
+
+
+
+.produto-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.produto-item strong {
+    display: inline-block;
+    width: 150px;
+    font-weight: bold;
+}
+
+.produto-item p {
+    margin: 5px 0;
+    color: #fff;
+}
+
+
+
+
+#produtosLista p {
+    color: #f3f6f9;
+    font-style: italic;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .menu {
+        padding: 15px;
+    }
+
+    .produto-item {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+        color: #fff;
+    }
+
+    h2 {
+        font-size: 24px;
+        color:#fff;
+    }
+}
+
+
+
+#formEdicao {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #dd1818;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#formEdicao h3 {
+    text-align: center;
+    color: #fff;
+}
+
+#formEdicao label {
+    margin: 10px 0  5px;
+    font-weight: bold;
+    color: #fff;   
+}
+
+
+#formEdicao input {
+    padding: 7px;
+    margin-bottom: 15px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+#formEdicao input:focus {
+    border-color: #000000;
+    outline: none;
+}
+
+#btnSalvarEdicao {
+    background-color: #020000; 
+    color: rgb(252, 249, 249);              
+    border: none;
+    padding: 2PX;
+    border-radius: 5px;        
+    padding: 8px 16px;
+    cursor: pointer;          
+    font-size: 14px;           
+    transition: background-color 0.3s ease; 
+}
+
+#btnSalvarEdicao:hover {
+    background-color: #050607;
+}
+
+.footer {
+    background-color: #961111;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    font-size: 1em;
+    margin: 0;
+}
+
+
+@keyframes slideUp {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+
+  /* From Uiverse.io by Nawsome */ 
+.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  
+  .slider {
+    overflow: hidden;
+    background-color: white;
+    margin: 0 15px;
+    height: 80px;
+    width: 20px;
+    border-radius: 30px;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1), -15px -15px 30px #000000,
+      inset -5px -5px 10px rgba(0, 0, 255, 0.1),
+      inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .slider::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0.3), 0px 420px 0 400px #2697f3,
+      inset 0px 0px 0px rgba(0, 0, 0, 0.1);
+    animation: animate_2 2.5s ease-in-out infinite;
+    animation-delay: calc(-0.5s * var(--i));
+  }
+  
+  @keyframes animate_2 {
+    0% {
+      transform: translateY(250px);
+      filter: hue-rotate(0deg);
+    }
+  
+    50% {
+      transform: translateY(0);
+    }
+  
+    100% {
+      transform: translateY(250px);
+      filter: hue-rotate(180deg);
+    }
+  }
+  

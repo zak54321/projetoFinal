@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/projetoFinal/css/estoque.css">
+    <link rel="icon" href="transferir.ico" type="image/x-icon">
+    <title>Estoque de Produtos</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Estoque de Produtos</h1>
+        <div class="menu">
+            <h2>Produtos Cadastrados</h2>
+            <div id="produtosLista"></div>
+        </div>
+
+        <div id="formEdicao" class="container" style="display: none;">
+            <h3>Editar Produto</h3>
+            <label for="inputNome">Nome:</label>
+            <input type="text" id="inputNome"><br>
+            <label for="inputQuantidade">Quantidade:</label>
+            <input type="number" id="inputQuantidade"><br>
+            <label for="inputPreco">Preço:</label>
+            <input type="number" id="inputPreco" step="0.01"><br>
+            <button id="btnSalvarEdicao">Salvar Alterações</button>
+        </div>
+    </div>
+   
+
+    <section class="loader">
+  
+      <div class="slider" style="--i:0">
+      </div>
+      <div class="slider" style="--i:1">
+      </div>
+      <div class="slider" style="--i:2">
+      </div>
+      <div class="slider" style="--i:3">
+      </div>
+      <div class="slider" style="--i:4">
+      </div>
+    </section>
+  
+  
+  
+    <script src="alterar.js"></script>
+    <footer class="footer">
+        <p> © 2024 - Direitos Reservados.</p>
+        <script src="/projetoFinal/js/alterar.js"></script>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,163 @@
+body {
+    background: url(https://static.vecteezy.com/ti/vetor-gratis/p1/6891093-abstrato-gradiente-fundo-vermelho-escuro-adequado-para-apresentacao-de-fundo-website-card-promotion-and-social-media-concept-vetor.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: cover;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    animation: fadeIn 1s ease-out;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #dd1818;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+     animation: slideUp 1s ease-out;
+}
+
+
+
+h1 {
+    text-align: center;
+    color: #fff;
+}
+
+.menu {
+    margin-top: 20px;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin: 10px 0  5px;
+    font-weight: bold;
+    color: #fff;   
+}
+
+input {
+    padding: 7px;
+    margin-bottom: 15px;
+    border: 1px solid;
+    border-radius: 5px;
+
+}
+
+
+button {
+    padding: 10px;
+    background-color: #6d130e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #130605;
+}
+
+
+.footer {
+    background-color:  #920606;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+
+
+}
+
+.footer p{
+    font-size: 1.3em;
+    margin: 0;
+}
+
+@keyframes slideUp {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+
+  @keyframes slideIn {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+
+  /* From Uiverse.io by Nawsome */ 
+.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  
+  .slider {
+    overflow: hidden;
+    background-color: white;
+    margin: 0 15px;
+    height: 80px;
+    width: 20px;
+    border-radius: 30px;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1), -15px -15px 30px #000000,
+      inset -5px -5px 10px rgba(0, 0, 255, 0.1),
+      inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    animation: slideUp 1s ease-out;
+  }
+  
+  .slider::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0.3), 0px 420px 0 400px #2697f3,
+      inset 0px 0px 0px rgba(0, 0, 0, 0.1);
+    animation: animate_2 2.5s ease-in-out infinite;
+    animation-delay: calc(-0.5s * var(--i));
+   
+  }
+  
+  @keyframes animate_2 {
+    0% {
+      transform: translateY(250px);
+      filter: hue-rotate(0deg);
+    }
+  
+    50% {
+      transform: translateY(0);
+    }
+  
+    100% {
+      transform: translateY(250px);
+      filter: hue-rotate(180deg);
+    }
+  }
+  
+  
